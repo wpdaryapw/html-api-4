@@ -3,23 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FileReader</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="style.css">
+  <title>File Storage</title>
 </head>
 <body>
 
-  <div id="drop-area" ondrop="dropHandler(event)" ondragover="dragOverHandler(event)">
-    Перетащите файлы сюда или
-    <input type="file" id="file-input" multiple onchange="handleFiles(this.files)">
-    <label for="file-input">выберите файлы</label>
-  </div>
+<div class="drop-area" id="dropArea">
+  <input type="file" id="file-input" multiple>
+</div>
 
-  <div id="file-list"></div>
-
-  <button onclick="resetFiles()">Сбросить файлы</button>
-  <button onclick="downloadFiles()">Скачать файлы</button>
-
-  <script src="script.js"></script>
+<script src="script.js"></script>
 
 </body>
 </html>
